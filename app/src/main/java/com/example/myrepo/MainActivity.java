@@ -10,6 +10,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        findViewById(R.id.btnAboutMe).setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, AboutMeActivity.class));
+        });
+
         findViewById(R.id.btnLinearForm).setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, LinearFormActivity.class));
         });

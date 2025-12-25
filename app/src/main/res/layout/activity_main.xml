@@ -1,23 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
     tools:context=".MainActivity">
 
+    <!-- App Title -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="MyRepo - Lab Exercises"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp" />
+
+    <!-- About Me Button (ON TOP) -->
+    <Button
+        android:id="@+id/btnAboutMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Me"
+        android:textSize="18sp"
+        android:layout_margin="12dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"/>
+
+    <!-- Linear Layout Form Button -->
     <Button
         android:id="@+id/btnLinearForm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Linear Layout Form (Exercise 5)"
-        android:layout_margin="8dp"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="18sp"
+        android:layout_margin="12dp"/>
+
+    <!-- We will add more buttons here later 🔥 -->
+
+</LinearLayout>

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyRepo"
         tools:targetApi="31">
         <activity
+            android:name=".AboutMeActivity"
+            android:exported="false" />
+        <activity
             android:name=".LinearFormActivity"
             android:exported="false" />
         <activity
