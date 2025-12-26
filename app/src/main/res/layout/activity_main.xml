@@ -39,5 +39,11 @@
         android:layout_margin="12dp"/>
 
     <!-- We will add more buttons here later 🔥 -->
-
+    <Button
+        android:id="@+id/btnCalculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculator (Custom Exercise)"
+        android:textSize="18sp"
+        android:layout_margin="12dp"/>
 </LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212">
+
+    <!-- Top Toolbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="start">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←"
+            android:textSize="28sp"
+            android:background="#00000000"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculator"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Display -->
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:text="0"
+        android:textSize="56sp"
+        android:gravity="end|bottom"
+        android:padding="24dp"
+        android:textColor="#FFFFFF" />
+
+    <!-- Buttons Grid -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="4"
+        android:padding="8dp">
+
+        <Button android:id="@+id/btnDelete" android:text="←" style="@style/GrayButton" />
+        <Button android:id="@+id/btnAC" android:text="AC" style="@style/GrayButton" />
+        <Button android:id="@+id/btnPercent" android:text="%" style="@style/GrayButton" />
+        <Button android:id="@+id/btnDivide" android:text="÷" style="@style/OrangeButton" />
+
+        <Button android:id="@+id/btn7" android:text="7" style="@style/DarkButton" />
+        <Button android:id="@+id/btn8" android:text="8" style="@style/DarkButton" />
+        <Button android:id="@+id/btn9" android:text="9" style="@style/DarkButton" />
+        <Button android:id="@+id/btnMultiply" android:text="×" style="@style/OrangeButton" />
+
+        <Button android:id="@+id/btn4" android:text="4" style="@style/DarkButton" />
+        <Button android:id="@+id/btn5" android:text="5" style="@style/DarkButton" />
+        <Button android:id="@+id/btn6" android:text="6" style="@style/DarkButton" />
+        <Button android:id="@+id/btnSubtract" android:text="−" style="@style/OrangeButton" />
+
+        <Button android:id="@+id/btn1" android:text="1" style="@style/DarkButton" />
+        <Button android:id="@+id/btn2" android:text="2" style="@style/DarkButton" />
+        <Button android:id="@+id/btn3" android:text="3" style="@style/DarkButton" />
+        <Button android:id="@+id/btnAdd" android:text="+" style="@style/OrangeButton" />
+
+        <Button android:id="@+id/btnPlusMinus" android:text="+/−" style="@style/DarkButton" />
+        <Button android:id="@+id/btn0" android:text="0" style="@style/DarkButton" />
+        <Button android:id="@+id/btnDecimal" android:text="." style="@style/DarkButton" />
+        <Button android:id="@+id/btnEquals" android:text="=" style="@style/OrangeButton"
+            android:layout_columnSpan="1" />
+
+    </GridLayout>
+</LinearLayout>

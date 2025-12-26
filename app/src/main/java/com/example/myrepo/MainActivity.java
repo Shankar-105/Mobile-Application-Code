@@ -18,5 +18,9 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btnLinearForm).setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, LinearFormActivity.class));
         });
+
+        findViewById(R.id.btnCalculator).setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, CalculatorActivity.class));
+        });
     }
 }
